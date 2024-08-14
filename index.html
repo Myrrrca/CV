@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       body {
           margin: 0;
           padding: 0;
           height: 100%;
           background-color: #303030; 
+      }
+
+      .container {
+        height: 100vh;
+        display: flex;
+        align-items: center;
       }
 
       iframe {
@@ -17,11 +24,13 @@
           border: none;
       }
 
-      @media only screen and (max-width: 530px) {
-          body {
-              background-color: red; 
-          }
+      @media only screen and (max-width: 830px) {
           .container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+          }
+          iframe { 
             height: 100vh;
             display: flex;
             align-items: center;
